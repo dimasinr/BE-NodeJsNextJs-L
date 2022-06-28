@@ -8,7 +8,7 @@ import beautyBarRoute from "./routes/beautybars.js"
 import treatmentRoute from "./routes/treatments.js"
 import cookieParser from "cookie-parser"
 import { createRequire } from 'module';
-import path from "path"
+const port = process.env.PORT || 3000;
 
 const require = createRequire(import.meta.url);
 
@@ -62,7 +62,7 @@ app.use((err,req,res,next)=>{
 })
 
 // module.exports.handler = serverless(app);
-app.listen(() => {
+app.listen(port, () => {
     connect()
     console.log("connected to backend.");
 })
