@@ -6,6 +6,7 @@ import usersRoute from "./routes/users.js"
 import topBeautyBarRoute from "./routes/topbeautybars.js"
 import beautyBarRoute from "./routes/beautybars.js"
 import treatmentRoute from "./routes/treatments.js"
+import cityRoute from "./routes/city.js"
 import cookieParser from "cookie-parser"
 import { createRequire } from 'module';
 const port = process.env.PORT || 3000;
@@ -42,6 +43,7 @@ app.use("/api/users", usersRoute);
 app.use("/api/topbeautybar", topBeautyBarRoute);
 app.use("/api/beautybar", beautyBarRoute);
 app.use("/api/treatment", treatmentRoute);
+app.use("/api/city", cityRoute);
 
 // app.use(express.static(path.join(__dirname, "/<front end app folder name>/build")))
 
