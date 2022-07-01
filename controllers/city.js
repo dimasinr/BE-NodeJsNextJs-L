@@ -39,10 +39,10 @@ export const deleteCity = async (req, res, next) =>{
 
 export const getIdCity = async (req, res, next) =>{
     try{
-        const City = await City.findById(
+        const city = await City.findById(
             req.params.id
             );
-        res.status(200).json(City);
+        res.status(200).json(city);
     }catch(err){
         res.status(500).json(err);
     }
@@ -54,8 +54,8 @@ export const getAllCity = async (req, res, next) =>{
     // if (failed) return next(createError(401, "You are not authenticated!"));
 
     try{
-        const Citys = await City.find();
-        res.status(200).json(Citys);
+        const citys = await City.find();
+        res.status(200).json(citys);
     }catch(err){
         next(err);
     }
