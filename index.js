@@ -6,7 +6,7 @@ import usersRoute from "./routes/users.js"
 import topBeautyBarRoute from "./routes/topbeautybars.js"
 import beautyBarRoute from "./routes/beautybars.js"
 import treatmentRoute from "./routes/treatments.js"
-import cityRoute from "./routes/city.js"
+import cityRoute from "./routes/citys.js"
 import cookieParser from "cookie-parser"
 import { createRequire } from 'module';
 const port = process.env.PORT || 3000;
