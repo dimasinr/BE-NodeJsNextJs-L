@@ -1,5 +1,5 @@
 import express from "express";
-import { createCategory, deleteCategory, getAllCategory, getIdCategory, updateCategory } from "../controllers/Category.js";
+import { createCategory, deleteCategory, getAllCategory, getIdCategory, updateCategory } from "../controllers/category.js";
 import Category from "../models/Category.js";
 import { createError } from "../utils/error.js";
 import { verifyAdmin } from "../utils/verifyToken.js";
