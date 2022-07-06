@@ -6,10 +6,6 @@ const BeautyBarSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    type: {
-        type: String,
-        required: true
-    },
     title: {
         type: String,
         required: true
